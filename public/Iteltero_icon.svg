@@ -1,0 +1,7 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-secondary"
+     fill="currentColor" viewBox="0 0 24 24" width="40" height="40">
+    <circle class="text-secondary" cx="12" cy="12" fill-opacity="0.2" r="10" fill="#FBBF24"></circle>
+    <path d="M2 12C2 12 6 18 12 18C18 18 22 12 22 12" fill="none" stroke="#06B6D4" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="3px"></path>
+    <circle class="text-secondary" cx="12" cy="12" fill="#FBBF24" r="4"></circle>
+</svg>
