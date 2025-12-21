@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 interface NavbarProps {
     isLandingPage?: boolean;
@@ -8,6 +9,7 @@ interface NavbarProps {
 
 export function Navbar({ isLandingPage = false, onGetStarted }: NavbarProps) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
@@ -44,7 +46,7 @@ export function Navbar({ isLandingPage = false, onGetStarted }: NavbarProps) {
                                 </div>
                                 <div className="flex items-center space-x-4 ">
                                     <button
-                                        onClick={onGetStarted}
+                                        onClick={() => navigate("/sign-in")}
                                         className="hidden md:block cursor-pointer bg-primary hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-lg hover:shadow-blue-500/30">
                                         Sign In
                                     </button>

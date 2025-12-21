@@ -29,7 +29,6 @@ export default {
                 display: ["Manrope", "sans-serif"],
                 body: ["Inter", "sans-serif"],
             },
-
             borderRadius: {
                 DEFAULT: "1rem",
                 lg: "2rem",
@@ -42,6 +41,7 @@ export default {
                     "0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03)",
                 glow: "0 0 15px rgba(37, 99, 235, 0.3)",
             },
+
         },
     },
     plugins: [],

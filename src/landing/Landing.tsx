@@ -1,7 +1,9 @@
 import './Landing.css'
 import {Navbar} from "./Navbar.tsx";
+import {useNavigate} from "react-router-dom";
 
 export function Landing() {
+    const navigator = useNavigate();
     return (<>
 
             <div className="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300">
@@ -36,6 +38,7 @@ export function Landing() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                         <button
+                                            onClick={() => navigator("/sign-in")}
                                             className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl hover:shadow-blue-500/25 flex items-center justify-center gap-2">
                                             Start Practice Now
                                             <span className="material-icons text-sm">arrow_forward</span>
@@ -97,7 +100,7 @@ export function Landing() {
                                         </div>
                                     </div>
                                     <div
-                                        className="absolute -top-6 -right-6 bg-white dark:bg-surface-dark p-4 rounded-2xl shadow-xl">
+                                        className="absolute -top-6 -right-6 bg-white dark:bg-surface-dark p-4 rounded-2xl shadow-xl  animate-[bounce_6s_infinite]">
                                         <div className="flex items-center gap-3">
                                             <div className="bg-yellow-100 dark:bg-yellow-900/30 p-2 rounded-lg">
                                                 <span
@@ -151,7 +154,7 @@ export function Landing() {
                                     </p>
                                     <div className="flex flex-col gap-3">
                                         <div
-                                            className="flex items-center gap-3 p-3 bg-surface-light dark:bg-surface-dark rounded-xl">
+                                            className="flex items-center gap-3 p-3 bg-surface-light dark:bg-surface-dark rounded-xl ">
                                             <span className="material-icons text-green-500">check_circle</span>
                                             <span className="font-medium text-gray-700 dark:text-gray-300">Instant Band Score &amp; Breakdown</span>
                                         </div>
@@ -167,7 +170,7 @@ export function Landing() {
                                     <div
                                         className="relative bg-white dark:bg-surface-dark rounded-3xl shadow-2xl p-8 border border-gray-100 dark:border-gray-700">
                                         <div
-                                            className="absolute -top-6 -right-6 bg-white dark:bg-surface-dark p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 animate-bounce duration-[4000ms]">
+                                            className="absolute -top-6 -right-6 bg-white dark:bg-surface-dark p-5 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700  animate-[bounce_6s_infinite] duration-[4000ms]">
                                             <span
                                                 className="text-xs font-bold text-gray-500 dark:text-gray-400 block uppercase mb-1">Band Score</span>
                                             <span className="text-2xl font-black text-primary">7.5</span>

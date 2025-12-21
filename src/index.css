@@ -1,2 +1,22 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
+@layer base {
+    a {
+        @apply cursor-pointer ;
+    }
+
+    button {
+        @apply cursor-pointer rounded-lg;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="number"] {
+        @apply appearance-none block w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-primary/20 focus:border-primary dark:bg-background-dark dark:text-white sm:text-sm transition-all;
+    }
+    input[type="checkbox"] {
+        @apply cursor-pointer;
+    }
+}
