@@ -1,14 +1,13 @@
 import './App.css'
-import {Landing} from "./landing/Landing.tsx";
-import SignIn from "./auth/signin/SignIn.tsx";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import SignUp from "./auth/signup/SignUp.tsx";
+
+import IeltsListeningPage from "./listening-test/ListeningPage.tsx";
 
 function App() {
 
   return (
     <>
-        <BrowserRouter>
+        <IeltsListeningPage />
+        {/*<BrowserRouter>
             <Routes>
                 <Route index element={<Landing/>}/>
                 <Route path="/" element={<Landing/>}/>
@@ -16,7 +15,7 @@ function App() {
                 <Route path="/sign-up" element={<SignUp/>}/>
             </Routes>
 
-        </BrowserRouter>
+        </BrowserRouter>*/}
     </>
   )
 }
